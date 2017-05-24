@@ -1,0 +1,66 @@
+* { /* Selects all elements*/
+	box-sizing: border-box; /* automates box model, so you don't have to account for all the dimensions*/
+	padding: 0; /* No padding for any element*/
+	margin: 0; /* No margin for any element*/
+}
+
+body {
+	background-color: #E6E6EA;
+}
+
+nav ul {
+	overflow: auto; /* "Clear fix" it recognizes its height*/
+	background-color: rgba(0, 159, 163, .7);
+	list-style: none; /* Gets rid off the bullets*/
+	padding: 10px 5px; /* width and height */
+}
+
+nav li {
+/*	display: inline-block;  Allows you to display block level items next to each other. Although, is not a good*/
+
+	float: left;
+	width: 33.33%; /* it is targetting each li (divide 100 by the # of li elements*/
+	text-align: center;
+/*	border: 2px solid Black;
+*/
+}
+
+nav a {
+	color: rgb(255, 255, 255);
+	text-decoration: none; /* Gets rid off underline style */
+	font-size: 20;
+	font-family: "Arial Black", Gadget, sans-serif;
+	transition: .5s; /* Delays the time for the transition bet the hover*/
+
+}
+
+nav a:hover { /* Hover over "No space in bet a:hover" */
+	padding: 10px;
+	background-color: #E6E6EA;
+	color: #315659;
+}
+
+.header {
+	background-image: url("../images/music.jpg");
+	width: 100vw;/* Viewport width (vw), viewport-percentage lengths introduced in CSS3  */
+    height: 100vh; /* viewport height (vh) */
+	padding: 80px 20px;
+	background-size: cover;
+}
+
+h1 {
+	padding: 30px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 100px;
+	text-align: center;
+	color: #FF5A5F;
+}
+
+h2 {
+	padding: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #F5F5F5;
+}
+
