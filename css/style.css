@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Barrio|Quicksand');
+
 * { /* Selects all elements*/
 	box-sizing: border-box; /* automates box model, so you don't have to account for all the dimensions*/
 	padding: 0; /* No padding for any element*/
@@ -6,6 +8,35 @@
 
 body {
 	background-color: #E6E6EA;
+}
+
+h1 {
+	padding: 30px;
+	font-family: 'Barrio', cursive;
+	font-size: 100px;
+	text-align: center;
+	color: #FF5A5F;
+}
+
+@media only screen and (max-width: 400px) {
+
+   h1 { font-size: 50px; }
+}
+
+h2 {
+	margin: 10px 0;
+	padding: 10px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 30px;
+	color: #009FB7;
+}
+
+p {
+	padding: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #565554;
 }
 
 nav ul {
@@ -53,37 +84,55 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
 
 .main-content {
 	background-color: #fff;
-	padding: 20px;
-	margin: 70px;
-}
-
-h1 {
-	padding: 30px;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 100px;
-	text-align: center;
-	color: #FF5A5F;
-}
-
-h2 {
-	padding: 20px;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 30px;
-	text-align: center;
-	color: #009FB7;
-}
-
-p {
-	padding: 20px;
-	font-family: "Arial", Gadget, sans-serif;
-	font-size: 16px;
-	text-align: center;
-	color: #565554;
+	overflow: auto; /* makes the white background container flow through the content, 
+					There is another trick called clear fix*/
+	margin: 30px auto;
 }
 
 .img-50 {
-	width: 80%;
+	max-width: 100%;
 	display: block;
 	margin: 10px auto;
 
 }
+
+.box-a {
+	padding: 30px;
+	width: 33.33%;
+	float: left;
+}
+
+.box-b {
+	padding: 30px;
+	width: 33.33%;
+	float: left;
+}
+
+.box-c {
+	padding: 30px;
+	width: 33.33%;
+	float: left;
+}
+
+@media (max-width: 700px) {
+  .box-a {
+    width: 100%;
+  }
+  .box-b {
+    width: 100%;
+
+  }
+  .box-c {
+    width: 100%;
+  }
+}
+
+
+/* THESE ARE UTILITY CLASSES
+===============================================================================*/
+
+.center-text {
+	text-align: center;
+	
+}
+
