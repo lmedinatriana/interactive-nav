@@ -42,10 +42,19 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
 
 .header {
 	background-image: url("../images/music.jpg");
-	width: 100vw;/* Viewport width (vw), viewport-percentage lengths introduced in CSS3  */
+/*	width: 100vw; Viewport width (vw), viewport-percentage lengths introduced in CSS3  
     height: 100vh; /* viewport height (vh) */
-	padding: 80px 20px;
 	background-size: cover;
+	background-position: bottom;
+	padding: 80px 20px;
+
+}
+
+
+.main-content {
+	background-color: #fff;
+	padding: 20px;
+	margin: 70px;
 }
 
 h1 {
@@ -61,6 +70,20 @@ h2 {
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 30px;
 	text-align: center;
-	color: #F5F5F5;
+	color: #009FB7;
 }
 
+p {
+	padding: 20px;
+	font-family: "Arial", Gadget, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #565554;
+}
+
+.img-50 {
+	width: 80%;
+	display: block;
+	margin: 10px auto;
+
+}
