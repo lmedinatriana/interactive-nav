@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Navegation</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav>
+    	<ul>
+    		<li><a href="index.html" >Home</a> </li>
+    		<li><a href="about.html" >About</a> </li>
+    		<li><a href="#" >Contact</a> </li>
+    	</ul>
+    </nav>
+    <div class="header">
+      <h1> Contact</h1>
+    </div>
+    <section class="main-content-form">
+      <h2 class="center-text">Questions? Send me an email </h2>
+      <form>
+      <!-- <form method="post" action="process.php"> -->
+        <label>Name
+          <input type="text" name="name" placeholder="Name">
+        </label>
+        <label>Email
+          <input type="text" name="email" placeholder="Email">
+        </label>
+        <label>Subject
+          <input type="text" name="subject" placeholder="Subject">
+        </label>
+        <label>Message
+          <textarea name="message" placeholder="Message"></textarea>
+        </label>
+        <h3>Subscribe</h3>
+        <label>
+          <input class="sub-y" type="radio" name="subscribe" value="yes"> Yes
+        </label>
+        <label>
+          <input class="sub-n" type="radio" name="subscribe" value="no"> No
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>

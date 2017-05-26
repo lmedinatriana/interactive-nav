@@ -73,7 +73,7 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
 
 .header {
 	background-image: url("../images/music.jpg");
-/*	width: 100vw; Viewport width (vw), viewport-percentage lengths introduced in CSS3  
+/*	width: 100vw; Viewport width (vw), viewport-percentage lengths introduced in CSS3
     height: 100vh; /* viewport height (vh) */
 	background-size: cover;
 	background-position: bottom;
@@ -84,7 +84,7 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
 
 .main-content {
 	background-color: #fff;
-	overflow: auto; /* makes the white background container flow through the content, 
+	overflow: auto; /* makes the white background container flow through the content,
 					There is another trick called clear fix*/
 	margin: 30px auto;
 }
@@ -127,12 +127,47 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
   }
 }
 
+.main-content-form {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .box-a {
+    width: 100%;
+  }
+  .box-b {
+    width: 100%;
+
+  }
+
+}
+
+form {
+	background-color: #373F51;
+	margin: 30px ;
+	padding: 30px;
+}
+
+@media (max-width: 500px) {
+   form {
+		 width: 340px;
+	 }
+}
+
+label {
+	display: block;
+	justify-content: flex-end;
+}
+
+
 
 /* THESE ARE UTILITY CLASSES
 ===============================================================================*/
 
 .center-text {
 	text-align: center;
-	
-}
 
+}
