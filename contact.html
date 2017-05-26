@@ -16,30 +16,32 @@
     <div class="header">
       <h1> Contact</h1>
     </div>
-    <section class="main-content-form">
-      <h2 class="center-text">Questions? Send me an email </h2>
+    <section class="main-content">
+      <h2>Questions?</br> Send me an email </h2>
       <form>
-      <!-- <form method="post" action="process.php"> -->
-        <label>Name
-          <input type="text" name="name" placeholder="Name">
+        <label><span class="form-headers">Name</span>
+          <input type="text" name="name" placeholder="Type your name here">
         </label>
-        <label>Email
-          <input type="text" name="email" placeholder="Email">
+        <label><span class="form-headers">Email</span>
+          <input type="text" name="email" placeholder="Type your email">
         </label>
-        <label>Subject
-          <input type="text" name="subject" placeholder="Subject">
+        <label><span class="form-headers">Subject</span>
+          <input type="text" name="subject" placeholder="Subject of email">
         </label>
-        <label>Message
-          <textarea name="message" placeholder="Message"></textarea>
+        <label><span class="form-headers">Message</span>
+          <textarea name="message" placeholder="Type your message"></textarea>
         </label>
-        <h3>Subscribe</h3>
-        <label>
-          <input class="sub-y" type="radio" name="subscribe" value="yes"> Yes
-        </label>
-        <label>
-          <input class="sub-n" type="radio" name="subscribe" value="no"> No
-        </label>
-        <button type="submit">Send</button>
+        <div class="subscribe-a">
+          <label><span class="form-headers">Would you like to subscribe to my newsletter</span>
+            <input  type="radio" name="subscribe" value="yes"> Yes
+          </label>
+          <label>
+            <input type="radio" name="subscribe" value="no"> No
+          </label>
+        </div>
+        <div class="button-container">
+          <button type="submit">Send</button>
+        </div>
       </form>
     </section>
   </body>

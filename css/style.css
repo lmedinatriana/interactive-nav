@@ -89,6 +89,12 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
 	margin: 30px auto;
 }
 
+.main-content:after {
+  content: ""; /*No content*/
+  display: table;
+  clear: both;
+}
+
 .img-50 {
 	max-width: 100%;
 	display: block;
@@ -127,42 +133,75 @@ nav a:hover { /* Hover over "No space in bet a:hover" */
   }
 }
 
-.main-content-form {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-}
-
-@media (max-width: 700px) {
-  .box-a {
-    width: 100%;
-  }
-  .box-b {
-    width: 100%;
-
-  }
-
-}
-
-form {
-	background-color: #373F51;
-	margin: 30px ;
+/* CONTACT STYLE
+===============================================================================*/
+.main-content h2 {
+	text-align: center;
+	margin: 30px;
 	padding: 30px;
 }
 
-@media (max-width: 500px) {
-   form {
-		 width: 340px;
-	 }
+form {
+  background:#A0CCCC;
+  margin: 10%;
+  text-align: left;
+  width: 80%;
+  padding: 30px;
+	border-radius: 8px;
+	border: none;
 }
 
 label {
 	display: block;
-	justify-content: flex-end;
 }
 
+input {
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	border-radius: 8px;
+	border: none;
+}
 
+textarea {
+	margin: 10px;
+	padding: 10px;
+	float: left;
+	width: 100%;
+	height: 200px;
+	border-radius: 8px;
+	border: none;
+}
+
+.subscribe-a label {
+	display: inline;
+}
+.subscribe-a input {
+	width: auto;
+
+}
+
+button {
+	border-radius: 8px;
+	background-color: #FF5A5F; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-headers {
+	padding: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
 
 /* THESE ARE UTILITY CLASSES
 ===============================================================================*/
