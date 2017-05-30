@@ -1,212 +1,230 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Barrio|Quicksand');
-
-* { /* Selects all elements*/
-	box-sizing: border-box; /* automates box model, so you don't have to account for all the dimensions*/
-	padding: 0; /* No padding for any element*/
-	margin: 0; /* No margin for any element*/
+* {
+    /* Selects all elements*/
+    box-sizing: border-box;
+    /* automates box model, so you don't have to account for all the dimensions*/
+    padding: 0;
+    /* No padding for any element*/
+    margin: 0;
+    /* No margin for any element*/
 }
 
 body {
-	background-color: #E6E6EA;
+    background-color: #E6E6EA;
 }
 
 h1 {
-	padding: 30px;
-	font-family: 'Barrio', cursive;
-	font-size: 100px;
-	text-align: center;
-	color: #FF5A5F;
+    padding: 30px;
+    font-family: 'Barrio', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: #FF5A5F;
 }
 
 @media only screen and (max-width: 400px) {
-
-   h1 { font-size: 50px; }
+    h1 {
+        font-size: 50px;
+    }
 }
 
 h2 {
-	margin: 10px 0;
-	padding: 10px;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 30px;
-	color: #009FB7;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 30px;
+    color: #009FB7;
 }
 
 p {
-	padding: 20px;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
-	text-align: center;
-	color: #565554;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #565554;
 }
 
 nav ul {
-	overflow: auto; /* "Clear fix" it recognizes its height*/
-	background-color: rgba(0, 159, 163, .7);
-	list-style: none; /* Gets rid off the bullets*/
-	padding: 10px 5px; /* width and height */
+    overflow: auto;
+    /* "Clear fix" it recognizes its height*/
+    background-color: rgba(0, 159, 163, .7);
+    list-style: none;
+    /* Gets rid off the bullets*/
+    padding: 10px 5px;
+    /* width and height */
 }
 
 nav li {
-/*	display: inline-block;  Allows you to display block level items next to each other. Although, is not a good*/
-
-	float: left;
-	width: 33.33%; /* it is targetting each li (divide 100 by the # of li elements*/
-	text-align: center;
-/*	border: 2px solid Black;
+    /*	display: inline-block;  Allows you to display block level items next to each other. Although, is not a good*/
+    float: left;
+    width: 33.33%;
+    /* it is targetting each li (divide 100 by the # of li elements*/
+    text-align: center;
+    /*	border: 2px solid Black;
 */
 }
 
 nav a {
-	color: rgb(255, 255, 255);
-	text-decoration: none; /* Gets rid off underline style */
-	font-size: 20;
-	font-family: "Arial Black", Gadget, sans-serif;
-	transition: .5s; /* Delays the time for the transition bet the hover*/
-
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* Gets rid off underline style */
+    font-size: 20;
+    font-family: "Arial Black", Gadget, sans-serif;
+    transition: .5s;
+    /* Delays the time for the transition bet the hover*/
 }
 
-nav a:hover { /* Hover over "No space in bet a:hover" */
-	padding: 10px;
-	background-color: #E6E6EA;
-	color: #315659;
+nav a:hover {
+    /* Hover over "No space in bet a:hover" */
+    padding: 10px;
+    background-color: #E6E6EA;
+    color: #315659;
 }
 
 .header {
-	background-image: url("../images/music.jpg");
-/*	width: 100vw; Viewport width (vw), viewport-percentage lengths introduced in CSS3
+    background-image: url("../images/music.jpg");
+    /*	width: 100vw; Viewport width (vw), viewport-percentage lengths introduced in CSS3
     height: 100vh; /* viewport height (vh) */
-	background-size: cover;
-	background-position: bottom;
-	padding: 80px 20px;
-
+    background-size: cover;
+    background-position: bottom;
+    padding: 80px 20px;
 }
 
-
 .main-content {
-	background-color: #fff;
-	overflow: auto; /* makes the white background container flow through the content,
+    background-color: #fff;
+    overflow: auto;
+    /* makes the white background container flow through the content,
 					There is another trick called clear fix*/
-	margin: 30px auto;
+    margin: 30px auto;
 }
 
 .main-content:after {
-  content: ""; /*No content*/
-  display: table;
-  clear: both;
+    content: "";
+    /*No content*/
+    display: table;
+    clear: both;
 }
 
 .img-50 {
-	max-width: 100%;
-	display: block;
-	margin: 10px auto;
-
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
 }
 
 .box-a {
-	padding: 30px;
-	width: 33.33%;
-	float: left;
+    padding: 30px;
+    width: 33.33%;
+    float: left;
 }
 
 .box-b {
-	padding: 30px;
-	width: 33.33%;
-	float: left;
+    padding: 30px;
+    width: 33.33%;
+    float: left;
 }
 
 .box-c {
-	padding: 30px;
-	width: 33.33%;
-	float: left;
+    padding: 30px;
+    width: 33.33%;
+    float: left;
 }
 
 @media (max-width: 700px) {
-  .box-a {
-    width: 100%;
-  }
-  .box-b {
-    width: 100%;
-
-  }
-  .box-c {
-    width: 100%;
-  }
+    .box-a {
+        width: 100%;
+    }
+    .box-b {
+        width: 100%;
+    }
+    .box-c {
+        width: 100%;
+    }
 }
+
 
 /* CONTACT STYLE
 ===============================================================================*/
+
 .main-content h2 {
-	text-align: center;
-	margin: 30px;
-	padding: 30px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
 }
 
 form {
-  background:#A0CCCC;
-  margin: 10%;
-  text-align: left;
-  width: 80%;
-  padding: 30px;
-	border-radius: 8px;
-	border: none;
+    background: #A0CCCC;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    padding: 30px;
+    border-radius: 8px;
+    border: none;
 }
 
 label {
-	display: block;
+    display: block;
 }
 
 input {
-	margin: 10px;
-	padding: 10px;
-	width: 100%;
-	border-radius: 8px;
-	border: none;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
 }
 
 textarea {
-	margin: 10px;
-	padding: 10px;
-	float: left;
-	width: 100%;
-	height: 200px;
-	border-radius: 8px;
-	border: none;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: none;
 }
 
 .subscribe-a label {
-	display: inline;
+    display: inline;
 }
-.subscribe-a input {
-	width: auto;
 
+.subscribe-a input {
+    width: auto;
+}
+
+
+.form-headers {
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: right;
+    color: #fff;
 }
 
 button {
-	border-radius: 8px;
-	background-color: #FF5A5F; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-	margin: 10px;
-	padding: 10px;
-	width: 100%;
+    border-radius: 8px;
+    background-color: #009FB7;
+    /* Green */
+    border: none;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
 }
 
-.form-headers {
-	padding: 20px;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
-	text-align: center;
-	color: #fff;
+button:hover {
+    /* Hover over "No space in bet a:hover" */
+    padding: 10px;
+    background-color: #FF5A5F;
+    color: white;
 }
+
 
 /* THESE ARE UTILITY CLASSES
 ===============================================================================*/
 
 .center-text {
-	text-align: center;
-
+    text-align: center;
 }
