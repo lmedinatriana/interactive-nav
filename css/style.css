@@ -144,6 +144,16 @@ nav a:hover {
 /* CONTACT STYLE
 ===============================================================================*/
 
+.main-content form {
+    width: 700px;
+}
+
+@media (max-width: 400px) {
+    .main-content form {
+        width: 100%;
+    }
+}
+
 .main-content h2 {
     text-align: center;
     margin: 10px 0;
@@ -165,21 +175,33 @@ label {
 }
 
 input {
-    margin: 10px;
+    margin: 10px 0px;
     padding: 10px;
     width: 100%;
     border-radius: 8px;
     border: none;
 }
 
+input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    opacity: .4;
+}
+
 textarea {
-    margin: 10px;
+    margin: 10px 0px;
     padding: 10px;
     float: left;
     width: 100%;
     height: 200px;
     border-radius: 8px;
     border: none;
+    max-height: 100%;
+    max-width: 100%; 
+}
+
+textarea::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    opacity: .4;
 }
 
 .subscribe-a label {
@@ -192,6 +214,7 @@ textarea {
 
 
 .form-headers {
+    margin:10px 0px;
     padding: 10px;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -201,7 +224,7 @@ textarea {
 
 button {
     border-radius: 8px;
-    background-color: #009FB7;
+    background-color: #FF5A5F;
     /* Green */
     border: none;
     color: whitesmoke;
@@ -209,7 +232,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 10px;
     width: 100%;
 }
@@ -217,7 +240,7 @@ button {
 button:hover {
     /* Hover over "No space in bet a:hover" */
     padding: 10px;
-    background-color: #FF5A5F;
+    background-color: #009FB7;
     color: white;
 }
 
